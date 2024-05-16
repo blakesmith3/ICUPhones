@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0"> 
+    
+    <link rel="stylesheet" href="../ICUPhones Web/ICUPhonesForm.css"> 
+    <title>Problem Report</title> 
+</head> 
+
+  
+<body> 
+  
+    <!--Containers for display-->
+    <div class="container"> 
+        <h1>Problem Report</h1> 
+  
+        <!-- Contains error -->
+        <h4 id="errorText"></h4> 
+          
+        <!-- Form element  -->
+        <form id="surveyForm"> 
+  
+            <label for="name"> 
+                Name: 
+            </label><br> 
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   required><br> 
+  
+            <label for="age"> 
+                Age: 
+            </label><br> 
+            <input type="number" 
+                   id="age" 
+                   name="age" 
+                   required><br> 
+  
+            <label> 
+                Problem 
+            </label><br> 
+            <input type="radio" 
+                   id="Internal" 
+                   name="type" 
+                   value="Internal" 
+                   required> 
+              
+            <label for="indoor"> 
+                Internal 
+            </label><br> 
+            <input type="radio" 
+                   id="External" 
+                   name="type" 
+                   value="External" 
+                   required> 
+              
+           <label for="outdoor"> 
+            External 
+            </label><br> 
+            <input type="radio" 
+                   id="Other" 
+                   name="type" 
+                   value="Other" 
+                   required> 
+  
+            <label for="both"> 
+                Other 
+            </label><br> 
+  
+            <label for="favourite-sport"> 
+                Other:
+            </label><br> 
+            <input type="text" 
+                   id="Other-text" 
+                   name="Other-text" 
+                   required><br> 
+  
+            <label for="Phone-Model"> 
+                Model of Phone 
+            </label><br> 
+            <input type="text" 
+                   id="Phone-Model" 
+                   name="Phone-Model" 
+                   required><br> 
+  
+            <label for="Description"> 
+                Description of Problem
+            </label><br> 
+            <input type="text" 
+                   id="Description" 
+                   name="Description" 
+                   required><br> 
+  
+  
+            <label for="feedback"> 
+                Extra Description (Optional):  
+            </label><br> 
+            <input type="textarea" 
+                   id="Extra" 
+                   name="Extra"><br> 
+  
+  
+  
+            <button type="submit"> 
+                Submit 
+            </button> 
+        </form> 
+    </div> 
+  
+    <!--Javascript linkk-->>
+    <script src="../ICUPhones Web/ICUPhonesForm.js"></script> 
+</body> 
+  
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Who We Are</title>
+    <meta http-equiv="refresh" content="100">
+    <link rel="stylesheet" href="../ICUPhones Web/ICUPhonesWAW.css">
+</head>
+<body>
+
+    
+<!--The Header. This has embedded links to navigate to the other pages-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesContact.html">Contact Us</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html">Shop</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html">Who We Are</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html">Work With Us</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesLocations.html">Locations</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html">Why Us</a></li>
+                <li><a href="file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesAbout.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!--This is the search bar-->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button id="searchButton">Search</button>
+    </div>
+
+      <!--Javascript functionality for the search bar-->
+<script>
+  document.getElementById("searchButton").addEventListener("click", function() {
+      var searchTerm = document.getElementById("searchInput").value.toLowerCase().trim();
+      console.log("Search term:", searchTerm);
+      var pages = {
+          "home": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/index.html",
+          "icuphones": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/index.html",
+
+          "contact us": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesContact.html",
+          "support": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesContact.html",
+          "contacts": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesContact.html",
+          "help": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesContact.html",
+          "contact": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesContact.html",
+
+          "shop": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html",
+          "phones": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html",
+          "accessories": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html",
+          "catalogue": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html", 
+          "catalog": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html",
+          "offer": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesshop.html",
+
+          "questions": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "ratings": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "wwa": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "waw": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "who we are": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "who are we": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "team": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "description": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          "who": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWAW.html",
+          
+          "requirements": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "wwu": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "work with us": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "work": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "management": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "salaries": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "jobs": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+          "job opportunities": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWWU.html",
+
+          "location": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesLocations.html",
+          "locations": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesLocations.html",
+          "map": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesLocations.html",
+          "stores": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesLocations.html",
+          "shops": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesLocations.html",
+
+          "why": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "why us": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "wwo": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "what we offer": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "fwo": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "facilities": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "facilities we offer": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "positive": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "positives": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "negative": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+          "negatives": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesWhy.html",
+
+          "founder": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesAbout.html",
+          "backstory": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesAbout.html",
+          "about": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesAbout.html",
+          "about us": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesAbout.html",
+          "sponsors": "file:///C:/Users/443675/OneDrive%20-%20The%20College%20of%20West%20Anglia/Web%20Development/File%20Structure%20Demo/ICUPhones/ICUPhones%20Web/ICUPhonesAbout.html",
+
+
+          
+          
+          
+      };
+
+      console.log("Pages:", pages);
+
+      if (pages.hasOwnProperty(searchTerm)) {
+        console.log("Redirecting to:", pages[searchTerm])
+          window.location.href = pages[searchTerm];
+      } else {
+          alert("Page not found");
+      }
+  });
+</script>
+
+    <div class="desc">
+        <h3>Business Description</h3>
+        <p>ICUPhones started out as an idea by a group of friends who initially were not enitrely serious about the whole idea. Gradually they expanded on ideas and business plans and invested time and money into the entire thing and over-time, their business grew at an alarming rate causing them to bring on-board a large team of staff and workers with expertise in all different areas such as technician, customer service, hardware technician and other jobs expected within a phone company. ICUPhones expanded their buildings, name and technology worldwide giving them recognition all over the world which eventually started raking in income and presented another challenge of shipping items across the globe. By the start of 2024, ICUPhones reached its 15th anniversary since being created and continutes to expand to this day as one of the highest ranking and most successful phone companies that there is today. Their rivals such as Apple and upcoming brand Oppo put them to the test at every new release. ICUPhones continues to expand. </p>
+        </div>
+
+            <div class="building">
+                <img src="https://www.cofico.com.vn/wp-content/uploads/2021/05/16790335541.jpg">
+                </div>
+
+                    <div class="founders">
+                        <img src="https://i.pinimg.com/474x/24/80/2e/24802eb8ac50b52d527cb200585dd5bb.jpg">
+                        <img src="https://techcrunch.com/wp-content/uploads/2013/01/5862970056_df9d98cd22_z.jpg?w=295">
+                        </div>
+
+                        <div class="staff">
+                            <img src="https://img.us.news.samsung.com/us/wp-content/uploads/2020/05/14233340/Reinventing-Roles-for-a-New-Era-Retail3.jpg">
+                    </div>
+                
+                <div class="ratings">
+                    <h2>Ratings</h2>
+                    
+                    <table>
+                        <tr>
+                          <th>Person</th>
+                          <th>Review</th>
+                          <th>Rating</th>
+                        </tr>
+                        <tr>
+                          <td>Lucas B</td>
+                          <td>I want to give a big shoutout and huge applause to ICUPhones online sales and aftersales tech support service. Absolutely superb. 2nd April 2024</td>
+                          <td>★5</td>
+                        </tr>
+                        <tr>
+                          <td>Liz H</td>
+                          <td>ICUphones provides unique products that stands out at the test of times. It's my pleasure to have come across ICUPhones products. 18th April 2024</td>
+                          <td>★4</td>
+                        </tr>
+                        <tr>
+                          <td>Tom R</td>
+                          <td>I'm a Tech Reviewer (YouTube) and after owning most of the ICUPhones phone range, I have to say that I've never had many issues. 1st May 2024</td>
+                          <td>★5</td>
+                        </tr>
+                        <tr>
+                          <td>Nicole S</td>
+                          <td>Not too sure what all the bad reviews below are about, my experience so far is positive. Best products I've used. 23rd March 2024</td>
+                          <td>★5</td>
+                        </tr>
+                        <tr>
+                          <td>Jack D</td>
+                          <td>Fantastic customer service, Wisbech store. 9th March 2024</td>
+                          <td>★5</td>
+                        </tr>
+                        <tr>
+                          <td>Alex N</td>
+                          <td>Over the last 5 years I have used ICUPhones Customer Service twice. First time to install WiFi calling on my phone and more recently to solve a major problem with my phone access. In both cases they were quick, efficient rang back when they said they would and fixed it. Nothing but praise. Well done ICUPhones.</td>
+                          <td>★5</td>
+                        </tr>
+                      </table>
+
+            </div>
+
+        <div class="questions">
+            <h2>Commonly Asked Questions</h2>
+            <ul>Are these phones overpriced?</ul>
+            <li>No, every penny is worth it. Our phones show your moneys worth.</li>
+
+            <ul>Can I join ICUPhones?</ul>
+            <li>Yes you can. We are open 6 days a week, Monday - Saturday.</li>
+
+            <ul>Can I upgrade my phone if I have an outdated version?</ul>
+            <li>Indeed. All you need is to hand in your phone but make sure you factory reset it and we will give you the newest version available.</li>
+
+            <ul>What if I decide that I want my old device back after I send it?</ul>
+            <li>When you ship your old upgrade eligible device to us, you are transferring ownership of it to ICUPhones and it cannot be returned to you</li>
+
+            <ul>How do I know how much to pay each month?</ul>
+            <li>The minimum payment due is found in the Payment Information section of your bill statement.</li>
+    </div>
+
+    <!--My footer contains a trademark licensing tag aswell as a clickable logo in the bottom right-->
+<footer>
+    <b>
+    <p>&copy; 2024 ICUPhones LTD - All rights reserved.™</p></b>
+    <div class="Samfoot">
+      <a href="https://www.samsung.com/uk/" target="_blank"><img src="https://naseba.com/wp-content/uploads/2018/07/samsung-white-logo-1024x338.png"></a>
+    </div>
+</footer>

@@ -1,0 +1,451 @@
+@media only screen and (min-width:1920px) and (max-width:1920px){
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+        min-height: 100%;
+        overflow: hidden;
+        background-color: white;
+}
+ 
+header {
+    background-color: red;
+    padding: 0.5%;
+    font-family:  georgia;
+}
+ 
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+ 
+     nav ul li {
+         display: inline-block;
+         margin: 0 3%;
+            }
+ 
+        nav ul li a {
+            color: #fff;
+         text-decoration: none;
+            }
+ 
+        .search-bar {
+            text-align: center;
+            margin-top: 0.5%;
+            background: red;
+        
+         }
+ 
+        .search-bar input[type="text"] {
+            padding: 0.25%;
+            width: 60%;
+        }
+ 
+    .search-bar button {
+        padding: 0.35% 0.3%;
+        background-color: #ed1717;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+    
+    .parent-popup {
+        height: 9vh;
+    
+    }
+    .popup {
+    background-color: #f24d11;
+            color: white;
+            padding: 0.6%;
+            text-align: center;
+            float: none;
+            margin-top: 0.6%;
+            height: 100%;
+
+    }
+ 
+
+    .popup img {
+        height: 132%;
+        width: 40%;
+        margin-top: -1.5%;
+    }
+
+.parent-ad1 {
+    height: 100vh;
+    float: left;
+    width: 50%;
+}
+
+.advertisement1 {
+    width: 50%;
+    background-color: #f6830c;
+    color: white;
+    padding: 0.3%;
+    text-align: center;
+    float: left;
+    height: 73.5%;
+    margin-top: 1.05%;
+    }
+ 
+    .advertisement1 img {
+        height: 100.8%;
+        width: 101.8%;
+        margin-left: -1.1%;
+        margin-top: -0.5%;
+    }
+
+.parent-ad2 {
+    height: 100vh;
+    float: right;
+    width: 50%;
+}
+.advertisement2 {
+    float: right;
+    width: 50%;
+    background-image: linear-gradient(#f6830c, #ffa500);
+    
+    color: white;
+    padding: 0.3%;
+    text-align: center;
+    height: 73.5%;
+    margin-top: 1.05%;
+    }
+ 
+.advertisement2 img {
+    width: 102.4%;
+    height: 100.9%;
+    margin-top: -0.7%;
+    margin-left: -0.2%;
+}
+
+.parent-duo {
+    height: 100vh;
+    
+}
+.new-releases {
+    width: 49%;
+    margin-top: 0.545%;
+    background-image: linear-gradient(#f6830c, #ffa500);
+    color: white;
+    padding: 1%;
+    text-align: center;
+    margin-left: 25.5%;
+    height: 36.2%;
+}
+
+.new-releases img {
+    float: right;
+    width: 103%;
+    height: 109%;
+    margin-top: -103.9%;
+    margin-right: -1.5%;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+    .new-releases img:hover {
+    opacity: 0.5; 
+    }
+
+.phones-display {
+    width: 49%;
+    margin-top: 0.545%; 
+    background-image: linear-gradient(#ffa500, #fbb806);
+    color: white;
+    padding: 1%;
+    text-align: center;
+    float: none;
+    margin-left: 25.5%;
+    height: 36.2%;
+    
+    }
+
+    .phones-display img {
+        height: 35%;
+        width: 48.3%;
+        margin-top: -0.65%;
+        margin-left: -24.2%;
+        position: fixed;
+        opacity: 1;
+        transition: opacity 1s ease;
+        aspect-ratio: 16/9;
+    }
+
+    .phones-display img:hover {
+        opacity: 0.5;
+    }
+
+   
+    footer {
+        position: fixed;
+        background-color: #fbb806;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding: 1% 0;
+        bottom: 0;
+        width: 100%;
+        height: 6vh;
+        
+        }
+    
+        .Samfoot {
+          height: 100vh;
+          width: 100%;
+        }
+    
+        .Samfoot img {
+            height: auto;
+            width: 12.5%;
+            float: right;
+            margin-top: -2.45%;
+            margin-right: -1.25%;
+        }
+
+    a:hover {
+        color: #fbb806;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1440px) and (max-width:1440px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        height: 100%;
+    }
+     
+    body {
+        font-family: Arial, sans-serif;
+            min-height: 100%;
+            overflow: hidden;
+            background-color: white;
+    }
+     
+    header {
+        background-color: red;
+        padding: 0.5%;
+        font-family:  georgia;
+    }
+     
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+     
+         nav ul li {
+             display: inline-block;
+             margin: 0 3%;
+                }
+     
+            nav ul li a {
+                color: #fff;
+             text-decoration: none;
+                }
+     
+            .search-bar {
+                text-align: center;
+                margin-top: 0.5%;
+                background: red;
+            
+             }
+     
+            .search-bar input[type="text"] {
+                padding: 0.25%;
+                width: 60%;
+            }
+     
+        .search-bar button {
+            padding: 0.35% 0.3%;
+            background-color: #ed1717;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            }
+        
+        .parent-popup {
+            height: 9vh;
+        
+        }
+        .popup {
+        background-color: #f24d11;
+                color: white;
+                padding: 0.6%;
+                text-align: center;
+                float: none;
+                margin-top: 0.6%;
+                height: 100%;
+    
+        }
+
+        .popup img {
+            width: 20%;
+            height: 130%;
+            margin-top: -1.8%;
+        }
+     
+    
+    .parent-ad1 {
+        height: 100vh;
+        float: left;
+        width: 50%;
+    }
+    
+    .advertisement1 {
+        width: 50%;
+        background-color: #f6830c;
+        color: white;
+        padding: 0.3%;
+        text-align: center;
+        float: left;
+        height: 73.5%;
+        margin-top: 1.05%;
+        }
+     
+        .advertisement1 img {
+            height: 100.8%;
+            width: 101.8%;
+            margin-left: -1.1%;
+            margin-top: -0.5%;
+        }
+    
+    .parent-ad2 {
+        height: 100vh;
+        float: right;
+        width: 50%;
+    }
+    .advertisement2 {
+        float: right;
+        width: 50%;
+        background-color: #f6830c;
+        color: white;
+        padding: 0.3%;
+        text-align: center;
+        height: 73.5%;
+        margin-top: 1.05%;
+        }
+     
+    .advertisement2 img {
+        width: 102.4%;
+        height: 100.9%;
+        margin-top: -0.7%;
+        margin-left: -0.2%;
+    }
+    
+    .parent-duo {
+        height: 100vh;
+        
+    }
+    .new-releases {
+        width: 49%;
+        margin-top: 0.545%;
+        background-color: #f6830c;
+        color: white;
+        padding: 1%;
+        text-align: center;
+        margin-left: 25.5%;
+        height: 36.2%;
+    }
+    
+    .new-releases img {
+        float: right;
+        width: 103%;
+        height: 108%;
+        margin-top: -112.5%;
+        margin-right: -1.5%;
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+    
+        .new-releases img:hover {
+        opacity: 0.5; 
+        }
+    
+    .phones-display {
+        width: 49%;
+        margin-top: 0.545%; 
+        background-color: orange;
+        color: white;
+        padding: 1%;
+        text-align: center;
+        float: none;
+        margin-left: 25.5%;
+        height: 36.2%;
+        
+        }
+    
+        .phones-display img {
+            height: 35%;
+            width: 48.3%;
+            margin-top: -0.65%;
+            margin-left: -24.2%;
+            position: fixed;
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+    
+        .phones-display img:hover {
+            opacity: 0.5;
+        }
+    
+       
+        footer {
+            position: fixed;
+            background-color: #fbb806;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 1% 0;
+            bottom: 0;
+            width: 100%;
+            height: 6vh;
+            
+            }
+        
+            .Samfoot {
+              height: 100vh;
+              width: 100%;
+            }
+        
+            .Samfoot img {
+                height: auto;
+            width: 14%;
+            float: right;
+            margin-top: -3%;
+            margin-right: -1%;
+            }
+    
+        a:hover {
+            color: #fbb806;
+        }
+}
